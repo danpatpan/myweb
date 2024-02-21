@@ -17,7 +17,23 @@ body{
     margin: auto;
     background-color: #fff;
 }
-
+.header{
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    transition: all 0.1s ease 0s;
+    width: inherit;
+    height: 50px;
+    display: flex;
+}
+.header h1{
+    padding-top: 3px;
+    padding-bottom: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* 팝업 */
 input[id*="popup"]{
     display: none;
 }
@@ -38,14 +54,24 @@ input[id*="popup"] + label + div{
 /* 컨텐츠 */
 input[id*="popup"] + label + div > div{
     position: absolute;
-    top: 15%;
     left: 50%;
     transform: translatex(-50%);
-    width: 85%;
-    height: 500px;
+    width: 95%;
+    height: 85%;
     border: 0;
     z-index: 2;
     text-align: center;
+}
+.top-fix{
+    background-color: #000000;
+    max-width: 500px;
+    width: 100%;
+    height: 44px;
+}
+.top-fix > h2{
+    color: #ffffff;
+    width: 100%;
+    padding-top: 6px;
 }
 input[id*="popup"] + label + div > div iframe{
     width: 100%;
